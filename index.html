@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column column-60 column-offset-20">
+                <form action="" name="myForm" onsubmit="return(validation());">
+                    <h1>User Validation</h1>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" name="name" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>E-mail</td>
+                            <td><input type="text" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td><input type="text" name="phone"></td>
+                        </tr>
+                        <tr>
+                            <td>Subject</td>
+                            <td>
+                                <select name="subject" id="">
+                                    <option value="0">Select</option>
+                                    <option value="1">HTML</option>
+                                    <option value="3">JavaScript</option>
+                                    <option value="4">CSS</option>
+                                    <option value="5">JSP</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <p id="demo"></p>
+                    <div><input type="submit" value="Submit"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./api/script.js"></script>
+</body>
+</html>
